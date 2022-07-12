@@ -1,0 +1,225 @@
+    1  pwd
+    2  chef --version
+    3  yum repolist
+    4  cd /home/ec2-user/
+    5  wget https://packages.chef.io/files/stable/chef-workstation/21.10.640/el/8/chef-workstation-21.10.640-1.el8.x86_64.rpm
+    6  ls -lrth
+    7  rpm -Uvh chef-workstation-21.10.640-1.el8.x86_64.rpm 
+    8  ls -lrth
+    9  chef --version
+   10  exit
+   11  chef -version
+   12  which chef
+   13  chef --version
+   14  history
+   15  pwd
+   16  ls -lrth
+   17  unzip chef-starter\ \(4\).zip 
+   18  pwd
+   19  ls -l
+   20  cd chef-repo/
+   21  pwd
+   22  ls -l
+   23  knife ssl check
+   24  knife ssl check
+   25  knife
+   26  pwd
+   27  knife ssl check
+   28  wget https://packages.chef.io/files/stable/chef-workstation/0.13.35/el/7/chef-workstation-0.13.35-1.el7.x86_64.rpm
+   29  chef --version
+   30  yum install chef-workstation-0.13.35-1.el7.x86_64.rpm -y
+   31  cd ..
+   32  ls -lrth
+   33  cat /etc/*rele*
+   34  wget https://packages.chef.io/stable/el/7/chefdk-0.11.2-1.el7.x86_64.rpm
+   35  rpm -Uvh chefdk-0.11.2-1.el7.x86_64.rpm 
+   36  chef verify
+   37  yum list | grep glic
+   38  yum list | grep glib
+   39  yum install glibc.x86_64 
+   40  yum install -y glib2.x86_64
+   41  chef verify
+   42  cd chef-repo/
+   43  ls -l
+   44  rm chef-workstation-0.13.35-1.el7.x86_64.rpm 
+   45  ll
+   46  ls -la
+   47  cd .chef/
+   48  ls -ll
+   49  pwd
+   50  cat config.rb 
+   51  ll
+   52  cat raghuopsdev.pem 
+   53  pwd
+   54  ll
+   55  cd ..
+   56  knife ssl check
+   57  chef --version
+   58  cd /opt/chef-workstation/embedded/bin/ruby
+   59  which chef
+   60  yum list | grep glib*
+   61  yum repolist
+   62  yum-config-manager --enable epel
+   63  yum repolist
+   64  yum repolist
+   65  yum install epel-release
+   66  yum repolist
+   67  amazon-linux-extras install epel -y
+   68  yum-config-manager --enable epel
+   69  yum repolist
+   70  yum list | grep glib
+   71  chef verify
+   72  cd /home/ec2-user/
+   73  ll
+   74  wget https://packages.chef.io/files/stable/chef-workstation/0.13.35/el/7/chef-workstation-0.13.35-1.el7.x86_64.rpm
+   75  ls -lrth
+   76  rpm -qa | grep chef
+   77  yum remove chef-workstation-21.10.640-1.el8.x86_64
+   78  ls -l
+   79  rpm -Uvh chef-workstation-0.13.35-1.el7.x86_64.rpm 
+   80  chef verify
+   81  knife ssl check
+   82  cd chef-repo/
+   83  knife ssl check
+   84  history
+   85  knife ssl check
+   86  chef verify
+   87  chef -v
+   88  export PS1="Workstation# "
+   89  pwd
+   90  ssh 172.31.7.102
+   91  whoami
+   92  cd /root/.ssh/
+   93  ll
+   94  ssh-keygen -t rsa
+   95  ls -l
+   96  cat id_rsa.pub 
+   97  ssh 172.31.7.102
+   98  history
+   99  cd chef-repo/
+  100  ll
+  101  cd chef-repo/
+  102  ll
+  103  vi hello.rb
+  104  chef-client --local-mode hello.rb 
+  105  cat /tmp/motd 
+  106  vi /tmp/motd 
+  107  chef-client --local-mode hello.rb 
+  108  cat /tmp/motd 
+  109  chef-client --local-mode hello.rb 
+  110  vi clean.rb
+  111  chef-client --local-mode clean.rb 
+  112  vi dir.rb
+  113  chef-client --local-mode dir.rb 
+  114  vi package.rb
+  115  chef-client --local-mode package.rb
+  116  rpm -qa | grep httpd
+  117  ll
+  118  mkdir pr-rcp
+  119  mv *.rb pr-rcp/
+  120  ll
+  121  cd pr-rcp/
+  122  ll
+  123  cat package.rb 
+  124  ll
+  125  cat hello.rb 
+  126  service httpd status
+  127  vi package.rb 
+  128  vi package.rb 
+  129  chef-client --local-mode package.rb
+  130  ps -ef | grep httpd
+  131  service httpd status
+  132  curl ifconfig.co
+  133  curl 65.1.164.108
+  134  curl -v http://localhost
+  135  vi package.rb 
+  136  chef-client --local-mode package.rb
+  137  cat package.rb 
+  138  yum remove httpd
+  139  chef-client --local-mode package.rb
+  140  service httpd stop
+  141  chef-client --local-mode package.rb
+  142  vi package-new.rb
+  143  chef-client --local-mode package-new.rb
+  144  curl -v http://localhost
+  145  curl localhost
+  146  cd ..
+  147  ll
+  148  cd cookbooks/
+  149  ll
+  150  chef generate cookbook apache
+  151  ll
+  152  tree apache
+  153  yum install -y tree
+  154  ll
+  155  tree apache
+  156  ll
+  157  cd apache/
+  158  ll
+  159  cd recipes/
+  160  ll
+  161  vi default.rb 
+  162  cd ..
+  163  ll
+  164  chef generate template index.html
+  165  ll
+  166  cd templates/
+  167  ll
+  168  vi index.html.erb 
+  169  cd ..
+  170  ll
+  171  cd ..
+  172  ll
+  173  foodcritic apache
+  174  chef-client --local-mode --runlist 'recipe[httpd]'
+  175  chef-client --local-mode --runlist 'recipe[apache]'
+  176  ll
+  177  cd ..
+  178  knife upload apache
+  179  ll
+  180  cd cookbooks/
+  181  knife upload apache/
+  182  cd ..
+  183  ll
+  184  git init
+  185  yum install -y git
+  186  git init
+  187  git remote add origin https://github.com/raghuopsdev/accenture-july22.git
+  188  git remote -v
+  189  git status
+  190  ll
+  191  ls -la
+  192  git add .
+  193  git status
+  194  ll
+  195  git status
+  196  history
+  197  ls -la
+  198  vi .gitignore 
+  199  git commit . -m "chef"
+  200  ll
+  201  git status
+  202  git branch -M main
+  203  git branch
+  204  git push -u origin main
+  205  cd /tmp/
+  206  mkdir soft
+  207  cd soft
+  208  touch test.txt
+  209  git add .
+  210  git init
+  211  git add .
+  212  git commit . "test"
+  213  git commit . "test"
+  214  git status
+  215  git commit . -m "test"
+  216  history
+  217  cd ..
+  218  cd /home/ec2-user/chef-repo/
+  219  ll
+  220  git push -u origin main
+  221  git pull origin main
+  222  git pull origin main --allow-unrelated-histories
+  223  git pull origin main
+  224  git push -u origin main
+  225  history > his-12july.txt
