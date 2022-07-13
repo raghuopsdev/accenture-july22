@@ -3,6 +3,20 @@ package "httpd" do
 end
 
 package "elinks"
+package "mysql"
+
+service "mysqld" do
+  action [:enable, :start]
+end
+
+mysqlpass = data_bag_item("mysql-new", "rtpass.json")
+
+mysql_service "mysqldefault" do
+   version '5.7'
+   initial_root_password mysqlpass["password"]
+   action [:create, :start]
+end
+
 
 service "httpd" do
  action [:enable, :start]
