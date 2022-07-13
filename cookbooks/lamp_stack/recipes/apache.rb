@@ -2,6 +2,8 @@ package "httpd" do
  action :install
 end
 
+package "elinks"
+
 service "httpd" do
  action [:enable, :start]
 end
@@ -23,6 +25,13 @@ node["lamp_stack"]["sites"].each do |sitename, data|
     action :create
   end
 
+  file "/var/www/html/#{sitename}/public_html/index.html" do
+    content "#{sitename} welcomes you"
+  end
+
+  template "/etc/hosts" do
+    source "hosts.erb"
+  end
 
   template "/etc/httpd/conf.d/#{sitename}.conf" do
     source "virtualhosts.erb"
