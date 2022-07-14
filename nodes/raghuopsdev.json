@@ -112,30 +112,30 @@
         "surplus": "0"
       },
       "directmap": {
-        "4k": "106496kB",
-        "2M": "942080kB"
+        "4k": "122880kB",
+        "2M": "925696kB"
       },
       "total": "988672kB",
-      "free": "376388kB",
-      "available": "605060kB",
-      "buffers": "1980kB",
-      "cached": "318644kB",
-      "active": "182380kB",
-      "inactive": "259584kB",
-      "dirty": "1664kB",
+      "free": "412316kB",
+      "available": "642584kB",
+      "buffers": "20kB",
+      "cached": "333452kB",
+      "active": "166232kB",
+      "inactive": "286448kB",
+      "dirty": "24kB",
       "writeback": "0kB",
-      "anon_pages": "121340kB",
-      "mapped": "56896kB",
-      "slab": "120628kB",
-      "slab_reclaimable": "72480kB",
-      "slab_unreclaim": "48148kB",
-      "page_tables": "10404kB",
+      "anon_pages": "119236kB",
+      "mapped": "43980kB",
+      "slab": "85700kB",
+      "slab_reclaimable": "50008kB",
+      "slab_unreclaim": "35692kB",
+      "page_tables": "10292kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "494336kB",
-      "committed_as": "977368kB",
+      "committed_as": "1079536kB",
       "vmalloc_total": "34359738367kB",
-      "vmalloc_used": "6092kB",
+      "vmalloc_used": "6268kB",
       "vmalloc_chunk": "0kB",
       "hugepage_size": "2048kB",
       "hugetlb": "0kB"
@@ -248,8 +248,6 @@
           },
           "state": "up",
           "arp": {
-            "169.254.169.254": "0a:be:ed:23:bc:98",
-            "172.31.0.2": "0a:be:ed:23:bc:98",
             "172.31.0.1": "0a:be:ed:23:bc:98"
           },
           "routes": [
@@ -290,16 +288,16 @@
           "lo": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "6505",
-              "packets": "32",
+              "bytes": "7161",
+              "packets": "44",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "6505",
-              "packets": "32",
+              "bytes": "7161",
+              "packets": "44",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -308,16 +306,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "7902227",
-              "packets": "95967",
+              "bytes": "16814234",
+              "packets": "161848",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "612768647",
-              "packets": "439542",
+              "bytes": "674983691",
+              "packets": "537562",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -337,10 +335,10 @@
     "platform": "amazon",
     "platform_version": "2",
     "platform_family": "amazon",
-    "uptime_seconds": 99804,
-    "uptime": "1 day 03 hours 43 minutes 24 seconds",
-    "idletime_seconds": 99446,
-    "idletime": "1 day 03 hours 37 minutes 26 seconds",
+    "uptime_seconds": 265328,
+    "uptime": "3 days 01 hours 42 minutes 08 seconds",
+    "idletime_seconds": 264072,
+    "idletime": "3 days 01 hours 21 minutes 12 seconds",
     "dmi": {
       "dmidecode_version": "3.2",
       "smbios_version": "2.7",
@@ -454,6 +452,13 @@
     },
     "languages": {
       "c": {
+        "gcc": {
+          "target": "x86_64-redhat-linux",
+          "configured_with": "../configure --enable-bootstrap --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --enable-libmpx --enable-libsanitizer --enable-gnu-indirect-function --enable-libcilkrts --enable-libatomic --enable-libquadmath --enable-libitm --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux",
+          "thread_model": "posix",
+          "description": "gcc version 7.3.1 20180712 (Red Hat 7.3.1-15) (GCC) ",
+          "version": "7.3.1"
+        },
         "glibc": {
           "version": "2.26",
           "description": "GNU C Library (GNU libc) stable release version 2.26, by Roland McGrath et al."
@@ -691,12 +696,12 @@
         },
         "/dev/xvda1": {
           "kb_size": "41930732",
-          "kb_used": "3075408",
-          "kb_available": "38855324",
+          "kb_used": "3338864",
+          "kb_available": "38591868",
           "percent_used": "8%",
           "total_inodes": "20970432",
-          "inodes_used": "91215",
-          "inodes_available": "20879217",
+          "inodes_used": "100470",
+          "inodes_available": "20869962",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -912,8 +917,8 @@
         },
         "/run": {
           "kb_size": "494336",
-          "kb_used": "456",
-          "kb_available": "493880",
+          "kb_used": "452",
+          "kb_available": "493884",
           "percent_used": "1%",
           "total_inodes": "123584",
           "inodes_used": "375",
@@ -953,12 +958,12 @@
         },
         "/": {
           "kb_size": "41930732",
-          "kb_used": "3075408",
-          "kb_available": "38855324",
+          "kb_used": "3338864",
+          "kb_available": "38591868",
           "percent_used": "8%",
           "total_inodes": "20970432",
-          "inodes_used": "91215",
-          "inodes_available": "20879217",
+          "inodes_used": "100470",
+          "inodes_available": "20869962",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1326,8 +1331,8 @@
         "tmpfs,/run": {
           "device": "tmpfs",
           "kb_size": "494336",
-          "kb_used": "456",
-          "kb_available": "493880",
+          "kb_used": "452",
+          "kb_available": "493884",
           "percent_used": "1%",
           "mount": "/run",
           "total_inodes": "123584",
@@ -1365,13 +1370,13 @@
         "/dev/xvda1,/": {
           "device": "/dev/xvda1",
           "kb_size": "41930732",
-          "kb_used": "3075408",
-          "kb_available": "38855324",
+          "kb_used": "3338864",
+          "kb_available": "38591868",
           "percent_used": "8%",
           "mount": "/",
           "total_inodes": "20970432",
-          "inodes_used": "91215",
-          "inodes_available": "20879217",
+          "inodes_used": "100470",
+          "inodes_available": "20869962",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1757,7 +1762,7 @@
       "search-state-factory": "/usr/local/share/factory/var",
       "search-configuration": "/root/.config"
     },
-    "ohai_time": 1657607579.7725039,
+    "ohai_time": 1657773103.7934866,
     "packages": {
       "jbigkit-libs": {
         "epoch": "0",
@@ -2480,11 +2485,25 @@
         "installdate": "1655146353",
         "arch": "x86_64"
       },
+      "git-core": {
+        "epoch": "0",
+        "version": "2.32.0",
+        "release": "1.amzn2.0.1",
+        "installdate": "1657608474",
+        "arch": "x86_64"
+      },
       "libnetfilter_conntrack": {
         "epoch": "0",
         "version": "1.0.6",
         "release": "1.amzn2.0.2",
         "installdate": "1655146353",
+        "arch": "x86_64"
+      },
+      "perl-TermReadKey": {
+        "epoch": "0",
+        "version": "2.30",
+        "release": "20.amzn2.0.2",
+        "installdate": "1657608475",
         "arch": "x86_64"
       },
       "boost-thread": {
@@ -2494,12 +2513,26 @@
         "installdate": "1655146353",
         "arch": "x86_64"
       },
+      "mpfr": {
+        "epoch": "0",
+        "version": "3.1.1",
+        "release": "4.amzn2.0.2",
+        "installdate": "1657772888",
+        "arch": "x86_64"
+      },
       "perl-parent": {
         "epoch": "1",
         "version": "0.225",
         "release": "244.amzn2.0.1",
         "installdate": "1655146354",
         "arch": "noarch"
+      },
+      "kernel-headers": {
+        "epoch": "0",
+        "version": "5.10.118",
+        "release": "111.515.amzn2",
+        "installdate": "1657772889",
+        "arch": "x86_64"
       },
       "perl-Encode": {
         "epoch": "0",
@@ -2508,11 +2541,25 @@
         "installdate": "1655146354",
         "arch": "x86_64"
       },
+      "libatomic": {
+        "epoch": "0",
+        "version": "7.3.1",
+        "release": "15.amzn2",
+        "installdate": "1657772890",
+        "arch": "x86_64"
+      },
       "perl-libs": {
         "epoch": "4",
         "version": "5.16.3",
         "release": "299.amzn2.0.1",
         "installdate": "1655146354",
+        "arch": "x86_64"
+      },
+      "gcc": {
+        "epoch": "0",
+        "version": "7.3.1",
+        "release": "15.amzn2",
+        "installdate": "1657772892",
         "arch": "x86_64"
       },
       "perl-Time-HiRes": {
@@ -4181,6 +4228,83 @@
         "installdate": "1657607033",
         "arch": "x86_64"
       },
+      "git-core-doc": {
+        "epoch": "0",
+        "version": "2.32.0",
+        "release": "1.amzn2.0.1",
+        "installdate": "1657608475",
+        "arch": "noarch"
+      },
+      "emacs-filesystem": {
+        "epoch": "1",
+        "version": "27.2",
+        "release": "4.amzn2.0.1",
+        "installdate": "1657608475",
+        "arch": "noarch"
+      },
+      "perl-Git": {
+        "epoch": "0",
+        "version": "2.32.0",
+        "release": "1.amzn2.0.1",
+        "installdate": "1657608475",
+        "arch": "noarch"
+      },
+      "telnet": {
+        "epoch": "1",
+        "version": "0.17",
+        "release": "65.amzn2",
+        "installdate": "1657771128",
+        "arch": "x86_64"
+      },
+      "libmpc": {
+        "epoch": "0",
+        "version": "1.0.1",
+        "release": "3.amzn2.0.2",
+        "installdate": "1657772888",
+        "arch": "x86_64"
+      },
+      "libcilkrts": {
+        "epoch": "0",
+        "version": "7.3.1",
+        "release": "15.amzn2",
+        "installdate": "1657772889",
+        "arch": "x86_64"
+      },
+      "glibc-headers": {
+        "epoch": "0",
+        "version": "2.26",
+        "release": "58.amzn2",
+        "installdate": "1657772890",
+        "arch": "x86_64"
+      },
+      "libsanitizer": {
+        "epoch": "0",
+        "version": "7.3.1",
+        "release": "15.amzn2",
+        "installdate": "1657772890",
+        "arch": "x86_64"
+      },
+      "libquadmath": {
+        "epoch": "0",
+        "version": "7.3.1",
+        "release": "15.amzn2",
+        "installdate": "1657772890",
+        "arch": "x86_64"
+      },
+      "libmpx": {
+        "epoch": "0",
+        "version": "7.3.1",
+        "release": "15.amzn2",
+        "installdate": "1657772890",
+        "arch": "x86_64"
+      },
+      "pcre-devel": {
+        "epoch": "0",
+        "version": "8.32",
+        "release": "17.amzn2.0.2",
+        "installdate": "1657772908",
+        "arch": "x86_64"
+      },
       "ncurses": {
         "epoch": "0",
         "version": "6.0",
@@ -4923,11 +5047,25 @@
         "installdate": "1655146353",
         "arch": "x86_64"
       },
+      "perl-Error": {
+        "epoch": "1",
+        "version": "0.17020",
+        "release": "2.amzn2",
+        "installdate": "1657608475",
+        "arch": "noarch"
+      },
       "libteam": {
         "epoch": "0",
         "version": "1.27",
         "release": "9.amzn2",
         "installdate": "1655146353",
+        "arch": "x86_64"
+      },
+      "git": {
+        "epoch": "0",
+        "version": "2.32.0",
+        "release": "1.amzn2.0.1",
+        "installdate": "1657608475",
         "arch": "x86_64"
       },
       "device-mapper-persistent-data": {
@@ -4937,6 +5075,13 @@
         "installdate": "1655146354",
         "arch": "x86_64"
       },
+      "cpp": {
+        "epoch": "0",
+        "version": "7.3.1",
+        "release": "15.amzn2",
+        "installdate": "1657772889",
+        "arch": "x86_64"
+      },
       "perl-Pod-Perldoc": {
         "epoch": "0",
         "version": "3.20",
@@ -4944,12 +5089,26 @@
         "installdate": "1655146354",
         "arch": "noarch"
       },
+      "glibc-devel": {
+        "epoch": "0",
+        "version": "2.26",
+        "release": "58.amzn2",
+        "installdate": "1657772890",
+        "arch": "x86_64"
+      },
       "perl-Pod-Usage": {
         "epoch": "0",
         "version": "1.63",
         "release": "3.amzn2",
         "installdate": "1655146354",
         "arch": "noarch"
+      },
+      "libitm": {
+        "epoch": "0",
+        "version": "7.3.1",
+        "release": "15.amzn2",
+        "installdate": "1657772890",
+        "arch": "x86_64"
       },
       "perl-threads": {
         "epoch": "0",
@@ -5074,7 +5233,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 92953,
+      "_AVPHYS_PAGES": 100358,
       "_NPROCESSORS_CONF": 1,
       "_NPROCESSORS_ONLN": 1,
       "_PHYS_PAGES": 247168,
@@ -5336,22 +5495,22 @@
     "name": "raghuopsdev",
     "chef_environment": "_default",
     "recipes": [
-      "apache",
-      "apache::default"
+      "src_compile",
+      "src_compile::default"
     ],
     "expanded_run_list": [
-      "apache::default"
+      "src_compile::default"
     ],
     "roles": [
 
     ],
     "cookbooks": {
-      "apache": {
+      "src_compile": {
         "version": "0.1.0"
       }
     }
   },
   "run_list": [
-    "recipe[apache]"
+    "recipe[src_compile]"
   ]
 }

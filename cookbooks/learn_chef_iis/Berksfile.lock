@@ -1,0 +1,13 @@
+DEPENDENCIES
+  chef-client
+  learn_chef_iis
+    path: .
+    metadata: true
+
+GRAPH
+  chef-client (12.3.4)
+    cron (>= 4.2.0)
+    logrotate (>= 1.9.0)
+  cron (7.0.4)
+  learn_chef_iis (0.2.1)
+  logrotate (3.0.9)
