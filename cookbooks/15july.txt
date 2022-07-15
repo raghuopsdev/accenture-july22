@@ -1,0 +1,626 @@
+    1  pwd
+    2  chef --version
+    3  yum repolist
+    4  cd /home/ec2-user/
+    5  wget https://packages.chef.io/files/stable/chef-workstation/21.10.640/el/8/chef-workstation-21.10.640-1.el8.x86_64.rpm
+    6  ls -lrth
+    7  rpm -Uvh chef-workstation-21.10.640-1.el8.x86_64.rpm 
+    8  ls -lrth
+    9  chef --version
+   10  exit
+   11  chef -version
+   12  which chef
+   13  chef --version
+   14  history
+   15  pwd
+   16  ls -lrth
+   17  unzip chef-starter\ \(4\).zip 
+   18  pwd
+   19  ls -l
+   20  cd chef-repo/
+   21  pwd
+   22  ls -l
+   23  knife ssl check
+   24  knife ssl check
+   25  knife
+   26  pwd
+   27  knife ssl check
+   28  wget https://packages.chef.io/files/stable/chef-workstation/0.13.35/el/7/chef-workstation-0.13.35-1.el7.x86_64.rpm
+   29  chef --version
+   30  yum install chef-workstation-0.13.35-1.el7.x86_64.rpm -y
+   31  cd ..
+   32  ls -lrth
+   33  cat /etc/*rele*
+   34  wget https://packages.chef.io/stable/el/7/chefdk-0.11.2-1.el7.x86_64.rpm
+   35  rpm -Uvh chefdk-0.11.2-1.el7.x86_64.rpm 
+   36  chef verify
+   37  yum list | grep glic
+   38  yum list | grep glib
+   39  yum install glibc.x86_64 
+   40  yum install -y glib2.x86_64
+   41  chef verify
+   42  cd chef-repo/
+   43  ls -l
+   44  rm chef-workstation-0.13.35-1.el7.x86_64.rpm 
+   45  ll
+   46  ls -la
+   47  cd .chef/
+   48  ls -ll
+   49  pwd
+   50  cat config.rb 
+   51  ll
+   52  cat raghuopsdev.pem 
+   53  pwd
+   54  ll
+   55  cd ..
+   56  knife ssl check
+   57  chef --version
+   58  cd /opt/chef-workstation/embedded/bin/ruby
+   59  which chef
+   60  yum list | grep glib*
+   61  yum repolist
+   62  yum-config-manager --enable epel
+   63  yum repolist
+   64  yum repolist
+   65  yum install epel-release
+   66  yum repolist
+   67  amazon-linux-extras install epel -y
+   68  yum-config-manager --enable epel
+   69  yum repolist
+   70  yum list | grep glib
+   71  chef verify
+   72  cd /home/ec2-user/
+   73  ll
+   74  wget https://packages.chef.io/files/stable/chef-workstation/0.13.35/el/7/chef-workstation-0.13.35-1.el7.x86_64.rpm
+   75  ls -lrth
+   76  rpm -qa | grep chef
+   77  yum remove chef-workstation-21.10.640-1.el8.x86_64
+   78  ls -l
+   79  rpm -Uvh chef-workstation-0.13.35-1.el7.x86_64.rpm 
+   80  chef verify
+   81  knife ssl check
+   82  cd chef-repo/
+   83  knife ssl check
+   84  history
+   85  knife ssl check
+   86  chef verify
+   87  chef -v
+   88  export PS1="Workstation# "
+   89  pwd
+   90  ssh 172.31.7.102
+   91  whoami
+   92  cd /root/.ssh/
+   93  ll
+   94  ssh-keygen -t rsa
+   95  ls -l
+   96  cat id_rsa.pub 
+   97  ssh 172.31.7.102
+   98  history
+   99  cd chef-repo/
+  100  ll
+  101  cd chef-repo/
+  102  knife bootstrap 172.31.7.102 --connection-user root --ssh-identity-file /root/.ssh/id_rsa --node-name WebServer
+  103  knife ssl check
+  104  knife --help
+  105  knife node list
+  106  knife node lis
+  107  knife node list
+  108  ls -l
+  109  cd cookbooks/
+  110  ll
+  111  ls -la
+  112  cat chefignore 
+  113  ll
+  114  cd starter/
+  115  ll
+  116  cd recipes/
+  117  ll
+  118  cat default.rb 
+  119  cd ..
+  120  cd ..
+  121  pwd
+  122  ll
+  123  cd chef-repo/
+  124  ll
+  125  vi hello.rb
+  126  chef-client --local-mode hello.rb 
+  127  cat /tmp/motd 
+  128  vi /tmp/motd 
+  129  chef-client --local-mode hello.rb 
+  130  cat /tmp/motd 
+  131  chef-client --local-mode hello.rb 
+  132  vi clean.rb
+  133  chef-client --local-mode clean.rb 
+  134  vi dir.rb
+  135  chef-client --local-mode dir.rb 
+  136  vi package.rb
+  137  chef-client --local-mode package.rb
+  138  rpm -qa | grep httpd
+  139  ll
+  140  mkdir pr-rcp
+  141  mv *.rb pr-rcp/
+  142  ll
+  143  cd pr-rcp/
+  144  ll
+  145  cat package.rb 
+  146  ll
+  147  cat hello.rb 
+  148  service httpd status
+  149  vi package.rb 
+  150  vi package.rb 
+  151  chef-client --local-mode package.rb
+  152  ps -ef | grep httpd
+  153  service httpd status
+  154  curl ifconfig.co
+  155  curl 65.1.164.108
+  156  curl -v http://localhost
+  157  vi package.rb 
+  158  chef-client --local-mode package.rb
+  159  cat package.rb 
+  160  yum remove httpd
+  161  chef-client --local-mode package.rb
+  162  service httpd stop
+  163  chef-client --local-mode package.rb
+  164  vi package-new.rb
+  165  chef-client --local-mode package-new.rb
+  166  curl -v http://localhost
+  167  curl localhost
+  168  cd ..
+  169  ll
+  170  cd cookbooks/
+  171  ll
+  172  chef generate cookbook apache
+  173  ll
+  174  tree apache
+  175  yum install -y tree
+  176  ll
+  177  tree apache
+  178  ll
+  179  cd apache/
+  180  ll
+  181  cd recipes/
+  182  ll
+  183  vi default.rb 
+  184  cd ..
+  185  ll
+  186  chef generate template index.html
+  187  ll
+  188  cd templates/
+  189  ll
+  190  vi index.html.erb 
+  191  cd ..
+  192  ll
+  193  cd ..
+  194  ll
+  195  foodcritic apache
+  196  chef-client --local-mode --runlist 'recipe[httpd]'
+  197  chef-client --local-mode --runlist 'recipe[apache]'
+  198  ll
+  199  cd ..
+  200  knife upload apache
+  201  ll
+  202  cd cookbooks/
+  203  knife upload apache/
+  204  cd ..
+  205  ll
+  206  git init
+  207  yum install -y git
+  208  git init
+  209  git remote add origin https://github.com/raghuopsdev/accenture-july22.git
+  210  git remote -v
+  211  git status
+  212  ll
+  213  ls -la
+  214  git add .
+  215  git status
+  216  ll
+  217  git status
+  218  history
+  219  ls -la
+  220  vi .gitignore 
+  221  git commit . -m "chef"
+  222  ll
+  223  git status
+  224  git branch -M main
+  225  git branch
+  226  git push -u origin main
+  227  cd /tmp/
+  228  mkdir soft
+  229  cd soft
+  230  touch test.txt
+  231  git add .
+  232  git init
+  233  git add .
+  234  git commit . "test"
+  235  git commit . "test"
+  236  git status
+  237  git commit . -m "test"
+  238  history
+  239  cd ..
+  240  cd /home/ec2-user/chef-repo/
+  241  ll
+  242  git push -u origin main
+  243  git pull origin main
+  244  git pull origin main --allow-unrelated-histories
+  245  git pull origin main
+  246  git push -u origin main
+  247  history > his-12july.txt
+  248  git add .
+  249  git commit . -m "history"
+  250  git push -u origin main
+  251  yum list | grep tomcat
+  252  history
+  253  exit
+  254  cd /home/ec2-user/chef-repo/
+  255  ls -l
+  256  knife node list
+  257  knife ssl check
+  258  knife cookbook --help
+  259  knife cookbook list
+  260  cd cookbooks/
+  261  ll
+  262  cd apache/
+  263  ls -l
+  264  vi metadata.rb 
+  265  ll
+  266  cd recipes/
+  267  ll
+  268  vi default.rb 
+  269  cd ..
+  270  cd templates/
+  271  ll
+  272  vi proxy.conf.erb
+  273  cd ..
+  274  ll
+  275  cd recipes/
+  276  ll
+  277  vi default.rb 
+  278  cd ..
+  279  ll
+  280  cd ..
+  281  knife upload apache
+  282  knife cookbook list
+  283  vi apache/recipes/default.rb 
+  284  knife upload apache
+  285  cd ..
+  286  ll
+  287  git add .
+  288  git status
+  289  git commit . -m "apache cb"
+  290  git push -u origin main
+  291  cd apach
+  292  cd cookbooks/apache/
+  293  ll
+  294  cd ..
+  295  pwd
+  296  ll
+  297  chef generate cookbook lamp_stack
+  298  ls -lrth
+  299  ll
+  300  tree lamp_stack/
+  301  cd lamp_stack/
+  302  ll
+  303  cd recipes/
+  304  ll
+  305  cat default.rb 
+  306  vi apache.rb
+  307  knife cookbook upload lamp_stack
+  308  knife cookbook list
+  309  knife node list
+  310  knife node run_list add WebServer "recipe[lamp_stack::apache]"
+  311  knife node run_list --help
+  312  knife node run_list remove WebServer "recipe[apache]"
+  313  knife ssh 'name:nodename' 'sudo chef-client' -x root
+  314  knife ssh 'name:WebServer' 'sudo chef-client' -x root
+  315  knife ssh 'name:nodename' 'systemctl status apache2' -x 
+  316  knife ssh 'name:WebServer' 'systemctl status httpd' -x 
+  317  knife ssh 'name:WebServer' 'systemctl status httpd' -x root
+  318   chef generate attribute ~/chef-repo/cookbooks/lamp_stack 
+  319  default
+  320  chef generate attribute ~/chef-repo/cookbooks/lamp_stack default
+  321  cd ..
+  322  ll
+  323  chef generate attribute default
+  324  ls -l
+  325  cd attributes/
+  326  ll
+  327  vi default.rb 
+  328  vi default.rb 
+  329  vi default.rb 
+  330  cd ..
+  331  cd recipes/
+  332  vi default.rb 
+  333  vi apache.rb 
+  334  vi apache.rb 
+  335  cd ..
+  336  ll
+  337  chef generate template ~/chef-repo/cookbooks/lamp_stack 
+  338  virtualhosts
+  339  chef generate template virtualhosts
+  340  ll
+  341  ll templates/
+  342  vi templates/virtualhosts.erb 
+  343  vi recipes/apache.rb 
+  344  vi recipes/apache.rb 
+  345  vi recipes/apache.rb 
+  346  knife cookbook upload lamp_stack
+  347  history | grep ssh
+  348  knife ssh 'name:WebServer' 'sudo chef-client' -x root
+  349  vi recipes/apache.rb 
+  350  knife cookbook upload lamp_stack
+  351  knife ssh 'name:WebServer' 'sudo chef-client' -x root
+  352  history
+  353  w
+  354  screen 
+  355  service tomcat stop
+  356  cd chef-repo
+  357  knife ssl check
+  358  knife node list
+  359  knife bootstrap -o winrm 3.109.152.203 -U Administrator -P '5hvwPxItrGIdeI)TEcHyVNqMil$)h.fz' --node-name WIN
+  360  knife bootstrap -o winrm 3.43.205.45.8 -U Administrator -P '7XL;cz@kgAR3z8RDN-)Hp?rU-*o$T*Iq' --node-name WIN
+  361  knife bootstrap -o winrm 43.205.45.8 -U Administrator -P '7XL;cz@kgAR3z8RDN-)Hp?rU-*o$T*Iq' --node-name WIN
+  362  telnet 43.205.45.8 5985
+  363  yum install -y telnet
+  364  telnet 43.205.45.8 5985
+  365  knife bootstrap -o winrm 172.31.9.86 -U Administrator -P '7XL;cz@kgAR3z8RDN-)Hp?rU-*o$T*Iq' --node-name WIN
+  366  ll
+  367  cd cookbooks/
+  368  ll
+  369  chef generate cookbook src_compile
+  370  ll
+  371  cd src_compile/
+  372  ll
+  373  cd recipes/
+  374  ll
+  375  vi default.rb 
+  376  cd ../../
+  377  pwd
+  378  ll
+  379  foodcritic src_compile/
+  380  cd ..
+  381  ll
+  382  cat his* | grep knife
+  383  cd cookbooks/
+  384  ll
+  385  chef-client --local-mode --runlist 'recipe[src_compile]'
+  386  vi src_compile/recipes/default.rb 
+  387  chef-client --local-mode --runlist 'recipe[src_compile]'
+  388  ll /usr/local/apache2/conf/httpd.conf 
+  389  vi src_compile/recipes/default.rb 
+  390  chef-client --local-mode --runlist 'recipe[src_compile]'
+  391  ll
+  392  knife cookbook upload src_compile/
+  393  ll
+  394  knife upload src_compile
+  395  knife cookbook list
+  396  knife node run_list add WebServer "recipe[src_compile]"
+  397  knife node run_list remove WebServer "recipe[lamp_stack]"
+  398  knife node run_list remove WebServer "recipe[lamp_stack::apache]"
+  399  telnet 43.205.45.8 5985
+  400  knife bootstrap -o winrm 172.31.9.86 -U Administrator -P '7XL;cz@kgAR3z8RDN-)Hp?rU-*o$T*Iq' --node-name WIN
+  401  history > july14.txt
+  402  git status
+  403  git add .
+  404  git status
+  405  git commit . -m "src-compile"
+  406  git push -u origin main
+  407  git status
+  408  chef generate cookbook winfile
+  409  ll
+  410  cd winfile
+  411  ll
+  412  vi recipes/default.rb 
+  413  cd ..
+  414  knife upload winfile
+  415  knife node list
+  416  history | grep knife
+  417  knife node run_list add WIN "recipe[winfile]"
+  418  knife ssh 'name:WebServer' 'sudo chef-client' -x root
+  419  knife winrm --help
+  420  knife winrm --help
+  421  knife winrm 'name:WIN' 'chef-client' -x Administrator -P '7XL;cz@kgAR3z8RDN-)Hp?rU-*o$T*Iq'
+  422  knife winrm 'IPAddress' 'chef-client' -m -x administrator -P 'Secret'
+  423  knife winrm '43.205.45.8' 'chef-client' -m -x administrator -P '7XL;cz@kgAR3z8RDN-)Hp?rU-*o$T*Iq'
+  424  knife supermarket download learn_chef_iis
+  425  ll
+  426  tar -xzvf learn_chef_iis-0.2.1.tar.gz 
+  427  ll
+  428  cd learn_chef_iis/
+  429  ll
+  430  vi recipes/default.rb 
+  431  cd templates/
+  432  ll
+  433  vi default/Default.htm.erb 
+  434  cd ..
+  435  cd ..
+  436  ll
+  437  knife upload learn_chef_iis
+  438  knife winrm '43.205.45.8' 'chef-client' -m -x administrator -P '7XL;cz@kgAR3z8RDN-)Hp?rU-*o$T*Iq'
+  439  knife node run_list add WIN "recipe[learn_chef_iis]"
+  440  knife winrm '43.205.45.8' 'chef-client' -m -x administrator -P '7XL;cz@kgAR3z8RDN-)Hp?rU-*o$T*Iq'
+  441  history >> july14.txt 
+  442  vi winfile/recipes/default.rb 
+  443  vi learn_chef_iis/recipes/default.rb 
+  444  ll
+  445  cd learn_chef_iis
+  446  ll
+  447  vi Berksfile
+  448  ll
+  449  vi metadata.rb
+  450  ll
+  451  berks install
+  452  vi Berksfile
+  453  berks install
+  454  vi metadata.rb
+  455  vi Berksfile
+  456  berks install
+  457  cd /root/.berkshelf/
+  458  ll
+  459  cd cookbooks/
+  460  ll
+  461  pwd
+  462  cd -
+  463  cd /home/ec2-user/chef-repo/cookbooks/
+  464  ll
+  465  cd learn_chef_iis
+  466  ll
+  467  berks upload
+  468  cd ..
+  469  chef generate cookbook deploy
+  470  ll
+  471  cd deploy/
+  472  cd recipes/
+  473  ll
+  474  vi default.rb 
+  475  cd ../../
+  476  chef-client --local-mode --runlist 'recipe[deploy]'
+  477  vi deploy/recipes/default.rb 
+  478  chef-client --local-mode --runlist 'recipe[deploy]'
+  479  mkdir -p /home/ec2-user/deployment
+  480  vi deploy/recipes/default.rb 
+  481  chef-client --local-mode --runlist 'recipe[deploy]'
+  482  cd /home/ec2-user/deployment/
+  483  ll
+  484  git init
+  485  git remote add origin https://github.com/raghuopsdev/hello-world-1.git
+  486  git remote -v
+  487  cd -
+  488  chef-client --local-mode --runlist 'recipe[deploy]'
+  489  vi deploy/recipes/default.rb 
+  490  chef-client --local-mode --runlist 'recipe[deploy]'
+  491  chef generate cookbook supermarket-deploy
+  492  ll
+  493  vi supermarket-deploy/recipes/default.rb 
+  494  chef-client --local-mode --runlist 'recipe[supermarket-deploy]'
+  495  vi supermarket-deploy/recipes/default.rb
+  496  yum repolist
+  497  wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+  498  yum repolist
+  499  rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+  500  java -version
+  501  yum list | grep jdk
+  502  yum install java-1.8.0-openjdk-devel.x86_64 -y
+  503  ll
+  504  java -version
+  505  yum install -y jenkins
+  506  systemctl start jenkins
+  507  ps -ef | grep jenkins
+  508  curl ifconfig.co
+  509  cat /var/lib/jenkins/secrets/initialAdminPassword
+  510  cd /usr/lib/jvm
+  511  ll
+  512  cd java-1.8.0-openjdk
+  513  ls
+  514  pwd
+  515  cd /home/ec2-user/chef-repo/
+  516  ll
+  517  cd cookbooks/
+  518  ll
+  519  mv july14.txt ../
+  520  cd ../
+  521  ll
+  522  history >> july14.txt 
+  523  git status
+  524  git add .
+  525  git commit . -m "jenkins-commands"
+  526  git push -u origin main
+  527  ps -ef | grep tomcat
+  528  yum list | grep tomcat
+  529  export tPS1="ac# "
+  530  export PS1="ac# "
+  531  cd /home/ec2-user/
+  532  ll
+  533  cd chef-repo/
+  534  knife ec2 --help
+  535  aws config
+  536  aws configure
+  537  knife ec2 ami list
+  538  cd chef-repo/
+  539  ll
+  540  cd cookbooks/
+  541  ll
+  542  vi apache/recipes/default.rb 
+  543  chef generate cookbook appserver
+  544  ll
+  545  vi appserver/recipes/default.rb 
+  546  ll
+  547  cd appserver/
+  548  ll
+  549  chef generate template tomcat-users.xml
+  550  ll
+  551  cd templates/
+  552  ll
+  553  ps -ef | grep tomcat
+  554  yum install -y tomcat
+  555  ll
+  556  cat /usr/share/tomcat/conf/tomcat-users.xml > tomcat-users.xml.erb 
+  557  ll
+  558  vi tomcat-users.xml.erb 
+  559  cd ..
+  560  ll
+  561  cd recipes/
+  562  ll
+  563  vi default.rb 
+  564  cd ..
+  565  cd ..
+  566  foodcritic appserver
+  567  knife upload appserver
+  568  knife cookbook list
+  569  history | grep knife
+  570  knife node run_list add WebServer "recipe[appserver]"
+  571  ll
+  572  vi appserver/
+  573  vi appserver/recipes/default.rb 
+  574  vi appserver/templates/tomcat-users.xml.erb 
+  575  ll
+  576  chef generate cookbook java
+  577  knife supermarket install java
+  578  cd /home/ec2-user/
+  579  ll
+  580  cd deployment/
+  581  git status
+  582  git branch
+  583  touch test.txt
+  584  git add .
+  585  git branch
+  586  git commit . -m "test"
+  587  git branch
+  588  git branch -M main
+  589  knife supermarket install java
+  590  git branch -M master
+  591  knife supermarket install jav
+  592  knife supermarket install java
+  593  knife supermarket download java
+  594  ll
+  595  tar -xzvf java-11.1.0.tar.gz 
+  596  ll
+  597  cd java/
+  598  ll
+  599  cd resources/
+  600  ll
+  601  cd ..
+  602  cd ..
+  603  ll
+  604  knife supermarket download java_se
+  605  cd /home/ec2-user/
+  606  ll
+  607  cd chef-repo/
+  608  ll
+  609  knife supermarket download java_se
+  610  ll
+  611  tar -xzvf java_se-12.0.1000.tar.gz 
+  612  ll
+  613  cd java_se/
+  614  ll
+  615  cd recipes/
+  616  ll
+  617  vi default.rb 
+  618  vi _linux_install.rb
+  619  ll
+  620  pwd
+  621  cd /home/ec2-user/chef-repo/
+  622  ll
+  623  cd cookbooks/
+  624  ll
+  625  vi java/recipes/default.rb 
+  626  history > 15july.txt
